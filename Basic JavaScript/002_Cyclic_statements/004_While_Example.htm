@@ -1,0 +1,91 @@
+﻿<!--
+
+    Циклическая конструкция - while.
+
+-->
+
+<html>
+<head>
+    <title>Условно-циклическая конструкция While</title>
+
+    <script type="text/javascript">
+
+        var str = "Угадайте задуманный цвет с пяти попыток.";
+
+        var maxAttempt = 5;   // Допустимое количество попыток.
+        var attempt = 0;      // Счетчик попыток.
+        var color = null;    // Задуманный цвет.
+<<<<<<< HEAD
+        var rand = Math.random() * 10;
+
+        rand = Math.round(rand);
+=======
+
+        var rand = Math.round(Math.random() * 10);
+>>>>>>> 26fc5f0c7545b325c269d09cee29ab64d097bfcf
+
+        switch(rand){
+            case 1:
+            case 2:
+            case 3:
+                color = "red";
+                break;
+<<<<<<< HEAD
+
+            case 4:
+            case 5:
+            case 6:
+                color = "green";
+                break;
+
+            case 7:
+            case 8:
+            case 9:
+            case 10:
+                color = "blue";
+                break;
+=======
+            case 4:    
+            case 5:    
+            case 6:
+                color = "blue";
+                break;    
+            case 7:    
+            case 8:    
+            case 9:
+            case 10:
+                color = "green";
+                break;    
+>>>>>>> 26fc5f0c7545b325c269d09cee29ab64d097bfcf
+        }
+
+        while (attempt < maxAttempt) {
+            attempt++;
+
+            value = prompt(str + " Попытка " + attempt, "");
+
+            if (value == null) {
+                break;
+            }
+
+            if (value != color) {
+                str = "Вы не угадали.";
+                continue;
+            }
+
+            document.write("<p>Поздравляем, Вы угадали с " + attempt + " попытки!");
+            break;
+        }
+        
+<<<<<<< HEAD
+=======
+        document.write("<br>" + color);
+>>>>>>> 26fc5f0c7545b325c269d09cee29ab64d097bfcf
+        document.write("<p>Конец игры!");
+
+    </script>
+
+</head>
+<body>
+</body>
+</html>
