@@ -11,19 +11,32 @@
 
     <script type="text/javascript">
 
-        var a = [1, 4, 11, 2, 9, 99, 5];
+        // var a = [1, 4, 11, 2, 9, 99, 5];
 
-        a.sort();
-        document.write(a.join("<p>"));
+        var a = 90;
+        var b = 70;
+        document.write(a + " " + b);
+
+        var temp = a;
+        a = b;
+        b = temp;
+        document.write("<br>" + a + " " + b);
+
+        // for(var i = 0; i < a.length; i++){
+        //     if(a[i] < a[++i]){}
+        // }
+
+        // a.sort();
+        // document.write(a.join("<p>"));
 
 
-        document.write("<hr/>");
+        // document.write("<hr/>");
 
 
-        var s = ["January", "February", "March", "April", "May"];
+        // var s = ["January", "February", "March", "April", "May"];
 
-        s.sort();
-        document.write(s.join("<p>"));
+        // s.sort();
+        // document.write(s.join("<p>"));
 
     </script>
 

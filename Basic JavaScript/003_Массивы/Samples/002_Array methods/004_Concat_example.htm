@@ -12,14 +12,18 @@
 
         var a = [1, 2, 3];
 
-        var input = prompt("Введите новый элемент массива:", "");
-
-        while (input != null) {
-            a = a.concat(input);
-            input = prompt("Введите новый элемент массива:", "");
+        for(var i = a.length - 1; 1 >= 0; i--){
+            document.write(a[i]);
         }
 
-        document.write(a.join("<br />"));
+        // var input = prompt("Введите новый элемент массива:", "");
+
+        // while (input != null) {
+        //     a = a.concat(input);
+        //     input = prompt("Введите новый элемент массива:", "");
+        // }
+
+        // document.write(a.join("<br />"));
 
     </script>
 
